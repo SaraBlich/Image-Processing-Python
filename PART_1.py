@@ -111,10 +111,7 @@ def run():
     plt.axis('off')
     
     plt.show()
-    
-    #DOKONAJ FILTRACJI OBRAZU FILTREM USREDNIAJACYM
-    mask = np.ones((13, 13))
-    filtered_image = signal.convolve2d(image_true, mask)
+   
     
     
     

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """
+
 Created on Sun Jun  9 20:10:48 2019
 
 @author: Sara
@@ -112,10 +113,7 @@ def run():
     
     plt.show()
    
-    
-    
-    
-    
+   
     
 if __name__ == "__main__":
     run()

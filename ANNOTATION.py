@@ -18,8 +18,13 @@ def generate_circle(x_size, y_size, x_origin, y_origin, radius):
 def generate_rectangle(x_size, y_size, x_b, y_b, width, height):
     image = np.zeros((y_size, x_size))
     image[y_b:y_b + height, x_b:x_b + width] = 1
-    
     return image
+
+def cardioide():
+    theta = np.linspace(0, 2*np.pi, 1000)
+    a = 1
+    r = 2*a(1+np.cos(theta))
+    return theta, r
 
 def dilatation(image, se):
     return (nd.generic_filter(image, lambda a: np.max(a), footprint = se.T))
@@ -48,6 +53,13 @@ def run():
     plt.figure()
     plt.imshow(image, cmap='gray')
     plt.show()
+    
+    theta, r = cardioide()
+    
+    plt.figure()
+    plt.polar(theta, r)
+    plt.show()
+    
     
 if __name__ == "__main__":
     run()

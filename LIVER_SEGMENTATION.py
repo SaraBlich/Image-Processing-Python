@@ -18,8 +18,8 @@ import sys
 
 # rg_global - global region growing
 # rg_local - global region growing
-# You may choose which method to use. Local method is used in the written code, but with coordinates that works as global region growing ([-1, 0, 1]). 
-#To use modified local method, change the coordinates in line 44
+# You may choose which method to use. Local method is used in the written code, but with coordinates that works as global 
+#region growing ([-1, 0, 1]). To use modified local method, change the coordinates in line 44
 
 def rg_global(image, seed, margin):
     	
